@@ -12,7 +12,7 @@ for i, v1 in enumerate(input):
 print("\n# Part 2")
 for i, v1 in enumerate(input):
     for k, v2 in enumerate(input[i + 1:]):
-        if v1 + v2 > 2020:
+        if v1 + v2 >= 2020:
             continue
         for v3 in input[k + 1:]:
             if v1 + v2 + v3 == 2020:
