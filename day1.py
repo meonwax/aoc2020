@@ -1,6 +1,5 @@
-f = open("day1.txt", "r")
-input = [int(line.strip()) for line in f.readlines()]
-f.close()
+with open('day1.txt', 'r') as f:
+    input = [int(line) for line in f.readlines()]
 
 print("\n# Part 1")
 for i, v1 in enumerate(input):
