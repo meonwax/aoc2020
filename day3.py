@@ -21,10 +21,8 @@ print("Number of trees for 'Right 3, down 1': {}".format(count_trees(3, 1)))
 print("Number of trees for 'Right 5, down 1': {}".format(count_trees(5, 1)))
 print("Number of trees for 'Right 7, down 1': {}".format(count_trees(7, 1)))
 print("Number of trees for 'Right 1, down 2': {}".format(count_trees(1, 2)))
-print("Multiplied: {}".format(
-    count_trees(1, 1) *
-    count_trees(3, 1) *
-    count_trees(5, 1) *
-    count_trees(7, 1) *
-    count_trees(1, 2)
-))
+
+result = 1
+for right, down in [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]:
+    result *= count_trees(right, down)
+print("Multiplied: {}".format(result))
