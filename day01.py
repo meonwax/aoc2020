@@ -1,4 +1,4 @@
-with open('day1.txt', 'r') as f:
+with open('day01.txt', 'r') as f:
     input = [int(line) for line in f.readlines()]
 
 print("\n# Part 1")

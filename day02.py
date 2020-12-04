@@ -1,7 +1,7 @@
 from collections import namedtuple
 import re
 
-with open('day2.txt', 'r') as f:
+with open('day02.txt', 'r') as f:
     input = [line.strip().split(" ") for line in f.readlines()]
 
 
